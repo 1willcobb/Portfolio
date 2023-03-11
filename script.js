@@ -23,3 +23,6 @@ sidebarToggle.addEventListener("click", () => {
     hidden.classList.toggle("show");
   }
 });
+
+
+sideBarEnabled.addEventListener("click",)
