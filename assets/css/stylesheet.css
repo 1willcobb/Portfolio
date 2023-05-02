@@ -1,0 +1,23 @@
+
+* {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    color: rgb(255, 252, 235);
+    background-color:  rgb(58, 58, 58);
+}
+
+h1 { font-weight: 900; }
+h2 { font-weight: 700; }
+h3 { font-weight: 400; }
+h4 { font-weight: 300; }
+
+header {
+}
+
+body {
+
+}
+
+footer {
+    
+}
