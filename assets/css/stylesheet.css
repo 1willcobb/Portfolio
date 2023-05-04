@@ -1,12 +1,19 @@
 
+
 * {
   font-family: 'Lato', sans-serif;
   font-weight: 900;
-  color: rgb(255, 252, 235);
-  background-color:  rgb(70, 70, 70);
+  color: rgb(101, 101, 101);
+  background-color: rgb(253, 236, 217);
   margin:0;
   padding:0;
   box-sizing: border-box;
+}
+
+:root {
+  --borders: 1px solid rgb(67, 67, 67);
+  --side-bar-size: 60px;
+  --top-nav-size: 53px;
 }
 
 html{
@@ -19,16 +26,26 @@ h3 { font-weight: 400; }
 h4 { font-weight: 300; }
 
 body {
-  margin-left: 100px;
+  margin-left: var(--side-bar-size);
+  margin-top: var(--top-nav-size);
 }
 
 header {
+  width: calc(100% - var(--side-bar-size));
+  position: fixed;
+  top: 0;
+  left: var(--side-bar-size);
+  z-index: 999;
+}
+
+.header-container {
   display: flex;
   flex: 1 0 0;
   align-items: center;
   width: 100%;
+  height: var(--top-nav-size);
   z-index: 1;
-  border-bottom: 1px solid rgb(255, 252, 235);
+  border-bottom: var(--borders);
   overflow:auto;
   padding-left: 25px;
 }
@@ -42,32 +59,69 @@ nav {
 }
 
 footer {
-  position: flex;
-  bottom:0%;
+  flex: 0 0 0;
   width: 100%;
+  border-top: var(--borders);
+}
+
+footer h4 {
   text-align: center;
-  padding: 10px;
-  border-top: 1px solid rgb(255, 252, 235);
-
 }
 
-.banner-video {
+div {
+  display: flex;
+}
+
+.banner {
   position: relative;
-  height: 60vh; /* 60% of viewport height */
+  width: 100%;
+  height: 25vh;
   overflow: hidden;
-  height: 300px;
-  border-bottom: 1px solid rgb(255, 252, 235);
+  border-bottom: var(--borders);
 }
 
-.banner-video iframe {
-  position: relative;
+.banner .video-container {
+  position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(4); /* zoomed in by 20% */
+  transform: translate(-50%, -50%) scale(4);
   width: 100%;
   height: 100%;
-  border: none;
-  opacity: 50%;
+  opacity: 75%;
+}
+
+.banner .video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.banner .text-box {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+  background-color: transparent;
+}
+
+.banner .text-box h1 {
+  color: rgb(227, 216, 196);
+  text-shadow: 3px 3px 2px rgb(90, 90, 90);
+  font-size: 3rem;
+  background-color: transparent;
+}
+
+.banner .text-box p {
+  color: rgb(227, 216, 196);
+  text-shadow: 3px 3px 2px rgb(90, 90, 90);
+  font-size: 100;
+  background-color: transparent;
 }
 
 .nav {
@@ -77,17 +131,17 @@ footer {
 }
 
 .nav:hover {
-  color: rgb(255, 245, 168);
+  color:  rgb(150, 150, 150);
 }
 
 .nav-btn {
-  background-image: linear-gradient(to bottom right, aqua, green);
-  border: 1px solid rgb(255, 252, 235);
+  border: var(--borders);
   border-radius: 25px;
 }
 
 .nav-btn:hover{
-  background-color: rgb(78, 78, 78);
+  background-color: rgb(202, 202, 202);
+  color: rgb(253, 236, 217);
 }
 
 .nav-btn:active{
@@ -98,12 +152,12 @@ footer {
   display: flex;
   flex-direction: column;
   height: 100%;
-  width: 100px;
+  width: var(--side-bar-size);
   position:fixed;
   top: 0;
   left: 0;
   z-index: 1;
-  border-right: 1px solid rgb(255, 252, 235);
+  border-right: var(--borders);
 }
 
 .side-nav-headers {
@@ -129,27 +183,50 @@ footer {
   cursor: pointer;
 }
 
-.about-me{
-  border: 1px solid rgb(255, 252, 235);
-}
-.about-me img {
-  height: 200px;
-  border-radius: 10px;
+.main-body {
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  padding: 10px;
 }
 
-.portfolio {
-  padding: 50px 50px 50px 50px;
+.blocks {
   display: flex;
+  flex: 0 0 0;
+  flex-direction: row;
+  align-items: center;
   flex-wrap: wrap;
-  flex: auto;
-  justify-content: space-evenly;
-  align-items: flex-start;
+  padding: 10px;
 }
+
+.section-title {
+  width: 190px;
+  padding-right: 20px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  border-right: 2px solid rgb(67, 67, 67);
+}
+
+.content {
+  display: flex;
+  flex: 1 0 50%;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#headshot {
+  height: 200px;
+  border: var(--borders);
+}
+
 
 .card {
-  border: 1px solid black;
-  border-radius: 15px;
-  flex: 0 0 300px;
+  display: flex;
+  flex: 1 0 0;
+  flex-wrap: wrap;
+  border: var(--borders);
 
 }
 .card img {
@@ -157,4 +234,17 @@ footer {
   height: 100%;
 }
 
+#about-me .content {
+  margin:20px;
+  border: var(--borders);
+}
 
+
+@media (max-width: 768px) {
+  .banner .text-box h1 {
+    font-size: 2.5rem;
+  }
+
+  .banner .text-box p {
+    font-size: 1.25rem;
+  }

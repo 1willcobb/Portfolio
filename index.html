@@ -12,26 +12,28 @@
 </head>
 <body>
 	<header>
-		<h1>Will Cobb</h1>
-		<nav>
-			<a class="nav" href="#about-me">About Me</a>
-			<a class="nav" href="#porfolio">Work</a>
-			<a class="nav nav-btn" href="mailto:cobb.will@gmail.com">Contact Me</a>
-		</nav>
+		<div class="header-container">
+			<h1>Will Cobb</h1>
+			<nav>
+				<a class="nav" href="#about-me">About Me</a>
+				<a class="nav" href="#work">Work</a>
+				<a class="nav nav-btn" href="mailto:cobb.will@gmail.com">Contact Me</a>
+			</nav>
+		</div>
 	</header>
 
-	<div class="banner-video">
-		<iframe src="https://www.youtube.com/embed/As1Z7PF7ZvA?autoplay=1&loop=1&mute=1&playsinline=1&controls=0" allowfullscreen></iframe>
-	</div>
-
+	<div class="banner">
+		<div class="video-container">
+		  <iframe src="https://www.youtube.com/embed/KZDRGl4oNGw?autoplay=1&loop=1&mute=1&playsinline=1&controls=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<div class="text-box">
+		  <h1>CREATIVE DEVELOPER</h1>
+		  <p>Photo | Video | Developer</p>
+		</div>
+	  </div>
 	
 	<section class="side-nav">
 		<div class="side-nav-headers">
-			<ul>
-				<li>About me</li>
-				<li>Work</li>
-				<li>Contact Me</li>
-			</ul>
 		</div>	
 		<div class="social-icons">
 			<a href="https://www.instagram.com/1willcobb">
@@ -45,31 +47,50 @@
 		</div>
 	</section>
 
-	<section class="about-me" id="about-me"></a>
-		<div class="me-card">
-			<img src="./assets/images/will headshot.jpeg" id="headshot" alt="Headshot of Will Cobb">
+	<div class="main-body">
+		<div class="blocks" id="about-me"></a>
+			<div class="section-title">
+				<h2>About Me</h2>
+			</div>
+			<div class="content">
+				<div id="headshot">
+					<img src="./assets/images/will headshot.jpeg" id="headshot" alt="Headshot of Will Cobb">
+				</div>
+				<p>This is a paragraph about me!
+					<br>This is where I will write a ton about me, what I like to do and all the things like that
+					<br>I think this is a good place to put all this!
+				</p>
+			</div>
 		</div>
-	</section>
 
-	<div class="portfolio">
-		<section class="card">
-			<header>Image 1</header>
-			<img src="./assets/images/ELEVATE THUMBs-1.jpg" alt="beautiful photo">
-		</section>
-		<section class="card">
-			<header>Image 1</header>
-			<img src="./assets/images/ELEVATE THUMBs-1.jpg" alt="beautiful photo">
-		</section>
-		<section class="card">
-			<header>Image 1</header>
-			<img src="./assets/images/ELEVATE THUMBs-1.jpg" alt="beautiful photo">
-		</section>
-		<section class="card">
-			<header>Image 1</header>
-			<img src="./assets/images/ELEVATE THUMBs-1.jpg" alt="beautiful photo">
-		</section>
+		<div class="blocks" id="work"></a>
+			<div class="section-title">
+				<h2>Work</h2>
+			</div>
+			<div class="content">
+				<div class="card">
+					<h3>Image 1</h3>
+					<img src="./assets/images/ELEVATE THUMBs-1.jpg" alt="beautiful photo">
+				</div>
+				<div class="card">
+					<h3>Image 1</h3>
+					<img src="./assets/images/ELEVATE THUMBs-1.jpg" alt="beautiful photo">
+				</div>
+				<div class="card">
+					<h3>Image 1</h3>
+					<img src="./assets/images/ELEVATE THUMBs-1.jpg" alt="beautiful photo">
+				</div>
+				<div class="card">
+					<h3>Image 1</h3>
+					<img src="./assets/images/ELEVATE THUMBs-1.jpg" alt="beautiful photo">
+				</div>
+			</div>
+		</div>
+
+		<form>
+
+		</form>
 	</div>
-
 	<footer>
 		<h4>Thanks for viewing</h4>
 	</footer>
