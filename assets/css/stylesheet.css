@@ -15,7 +15,7 @@ html{
     scroll-behavior: smooth;
   }
 
-main {
+body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -47,16 +47,16 @@ header h1 {
     font-size: 2rem;
 }
 
-body {
+main {
     margin-top: var(--header);
+    flex-direction: row;
 }
 
 footer {
+    margin-top: auto;
     display: flex;
     align-content: center;
     justify-content: center;
-    position: bottom;
-    bottom: 0;
     width: 100%;
     border-top: .05rem solid #ffffff;
     background-color: rgb(79, 79, 79);
@@ -106,7 +106,7 @@ nav a {
     width: 100%;
     height: 20rem;
     object-fit: cover;
-    object-position: bottom;
+    object-position: 0 90%;
 }
 
 
@@ -117,21 +117,29 @@ nav a {
 .sidebar {
     flex: 0 1 20rem;
     display: flex;
+    
 }
 
 #about-me img {
     height: 20rem;
     border-radius: 15px;
+
+}
+
+.flex-container {
+    display: flex;
 }
 
 .wrapper {
     max-width: 72rem;
     margin:auto;
+    
 }
 
 @media screen and (max-width: 640px) {
     .flex-container {
         display: flex;
+        flex-direction: column;
     }
     
     .hero {
@@ -140,6 +148,7 @@ nav a {
 
     .hero img {
         height: 15rem;
+        object-position: bottom;
     }
 }
 
@@ -148,11 +157,8 @@ nav a {
         display: flex;
     }
     
-    .hero {
-        height: 30rem;
-    }
 
     .hero img {
-        height: 30rem;;
+        object-position: 0 87%;
     }
 }
