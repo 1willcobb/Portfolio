@@ -1,77 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="./assets/css/reset.css" />
-	<link rel="stylesheet" href="./assets/css/stylesheet.css" />
-	<title>Will's Portfolio</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/stylesheet.css" >
+    <title>Will's Portfolio</title>
 </head>
-
 <body>
-	<header class="header">
-		<h1>Will Cobb</h1>
-		<nav>
-			<a class="links" href="#about-me">About Me</a>
-			<a class="links" href="#portfolio">Portfolio</a>
-			<a class="links contact" href="mailto: cobb.will@gmail.com">Hire Me</a>
-		</nav>
+	<header>
+		<div class="header-container">
+			<h1>Will Cobb</h1>
+			<nav>
+				<a class="nav" href="#about-me-anchor">About Me</a>
+				<a class="nav" href="#work">Portfolio</a>
+			</nav>
+			<a class="nav-btn" href="mailto:cobb.will@gmail.com">Contact Me</a>
+		</div>
 	</header>
 
-	<main>
-		<section class="hero">
-			<img src="./assets/images/Morro Film Fast needs-2.jpg">
-		</section>
+	<div class="banner">
+		<div class="video-container">
+		  <iframe src="https://www.youtube.com/embed/KZDRGl4oNGw?autoplay=1&loop=1&mute=1&playsinline=1&controls=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<div class="text-box">
+		  <h1>CREATIVE DEVELOPER</h1>
+		  <p>Photo | Video | Developer</p>
+		</div>
+	  </div>
+	
+	<section class="side-nav">
+		<div class="side-nav-headers">
+		</div>	
+		<div class="social-icons">
+			<a href="https://www.instagram.com/1willcobb">
+				<img src="./assets/icons/brown-icon-ig.png" alt="Instagram Button for Will Cobb"></a>
+			<a href="https://www.facebook.com/wacobb/">
+				<img src="./assets/icons/brown-icon-FB.png"  alt="Facebook button for Will Cobb"></a>
+			<a href="https://www.linkedin.com/in/1willcobb/">
+				<img src="./assets/icons/brown-icon-in.png" alt="Linkedin button for Will Cobb"></a>
+			<a href="https://www.youtube.com/channel/UCgeSDwPH-6ttgxdPANBjQPQ">
+				<img src="./assets/icons/brown-icon-yt.png"  alt="Youtube button for Will Cobb"></a>
+		</div>
+	</section>
 
-		<div id="about-me" class="flex-container wrapper">
-			<section class="sidebar">
-				<a><img src="./assets/images/will headshot.jpeg" alt="Photo of Will Cobb in white shirt and black hat in San Luis Obispo, CA"></a>
-			</section>
+	<a id="about-me-anchor"></a>
 
-
-			<aside class="content">
-				<h2>About-Me</h2>
+	<div class="main-body">
+		<div class="blocks" id="about-me"></a>
+			<div id="headshot">
+				<img src="./assets/images/will headshot.jpeg" id="headshot" alt="Headshot of Will Cobb">
+			</div>
+			<div class="content" id="about-me-content">
+				<h2>About Me</h2>
 				<p>
-					Sorev provides full stack service for the creation of courses and other forms of digital
-goods for creators. Our aim is to relieve the time and effort it takes to get your courses
-and products into the hands of your fans and for you to make smooth, easy, recurring
-revenue.
-Sorev works with your schedule to create a course through scripting, pre-production and
-planning, video production, editing, marketing, and managing your course or other digital goods.
-It is so important to us for you, the creator, to live a well balanced life, and we can work with you
-to fit our service into any schedule or time frame.
-Our services are completely free of upfront charge for the creator. Even the paid ads are free!
-To do this Sorev and the creator will enter into an agreement to split the profits of the course,
-product, or subscription produced by the agreement. Sorev provides the heavy lifting of aid in
-the design, creation of the materials, management, sales, and marketing, while the creator
-provides their talent and likeness.
+					I am the founder and CEO of Sorev, 
+					an online education marketing and production company and owner operator of 
+					Cobblestone Productions, a media production company for weddings and businesses.
+					<br>
+					<br>
+					I am a freelance developer seeking positions in cloud infrastructure, 
+					backend development, database management, and web apps.
 				</p>
-			</aside>
+			</div>
 		</div>
 
-		<div id="portfolio" class="flex-container wrapper">
-			<aside class="sidebar">
+		<div class="blocks work" id="work"></a>
+			<div class="section-title portfolio-text">
 				<h2>Portfolio</h2>
-			</aside>
-
-			<section class="content">
-				projects here
-			</section>
-
-
-			
+				<br>
+				<p>Projects launched and in development</p>
+			</div>
+			<div class="content">
+				<div class="card card-1">
+					<h3>Portfolio Website development</h3>
+					<a href="https://1willcobb.github.io/portfolio">
+						<img src="./assets/images/Portfolio Assets-2.jpg"  alt="beautiful photo">
+					</a>
+				</div>
+				<div class="card other-card">
+					<h3>Prework Study Guide</h3>
+					<a href="https://1willcobb.github.io/prework-study-guide/">
+						<img src="./assets/images/Portfolio Assets-1.jpg" alt="beautiful photo">
+					</a>
+				</div>
+				<div class="card other-card">
+					<h3>Project 3</h3>
+					<img src="./assets/images/ELEVATE THUMBs-4.jpg" alt="beautiful photo">
+				</div>
+				<div class="card other-card">
+					<h3>Project 4</h3>
+					<img src="./assets/images/ELEVATE THUMBs-5.jpg" alt="beautiful photo">
+				</div>
+				<div class="card other-card">
+					<h3>Project 5</h3>
+					<img src="./assets/images/ELEVATE THUMBs-6.jpg" alt="beautiful photo">
+				</div>
+				<div class="card other-card">
+					<h3>Project 6</h3>
+					<img src="./assets/images/ELEVATE THUMBs-8.jpg" alt="beautiful photo">
+				</div>
+			</div>
 		</div>
 
-		
-	</main>
-
+		<div class="form-box">
+			<h2>Let's chat</h2>
+			<p>As me anything you are into</p>
+			<form action="mailto:cobb.will@gmail.com">
+				<label for="fname">Full Name</label><br>
+ 				<input type="text" id="fname" name="fname"><br>
+				<label for="lname">Email</label><br>
+  				<input type="text" id="email"><br>
+				<button>Send it</button>
+			</form>
+		</div>
+	</div>
 	<footer>
-		<h4>Thanks For Viewing</h4>
+		<h4>Thanks for viewing</h4>
 	</footer>
 </body>
-
-
+</html>
