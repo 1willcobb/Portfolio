@@ -15,10 +15,10 @@
 		<div class="header-container">
 			<h1>Will Cobb</h1>
 			<nav>
-				<a class="nav" href="#about-me">About Me</a>
-				<a class="nav" href="#work">Work</a>
-				<a class="nav nav-btn" href="mailto:cobb.will@gmail.com">Contact Me</a>
+				<a class="nav" href="#about-me-anchor">About Me</a>
+				<a class="nav" href="#work">Portfolio</a>
 			</nav>
+			<a class="nav-btn" href="mailto:cobb.will@gmail.com">Contact Me</a>
 		</div>
 	</header>
 
@@ -47,49 +47,71 @@
 		</div>
 	</section>
 
+	<a id="about-me-anchor"></a>
+
 	<div class="main-body">
 		<div class="blocks" id="about-me"></a>
-			<div class="section-title">
-				<h2>About Me</h2>
+			<div id="headshot">
+				<img src="./assets/images/will headshot.jpeg" id="headshot" alt="Headshot of Will Cobb">
 			</div>
-			<div class="content">
-				<div id="headshot">
-					<img src="./assets/images/will headshot.jpeg" id="headshot" alt="Headshot of Will Cobb">
-				</div>
-				<p>This is a paragraph about me!
-					<br>This is where I will write a ton about me, what I like to do and all the things like that
-					<br>I think this is a good place to put all this!
+			<div class="content" id="about-me-content">
+				<h2>About Me</h2>
+				<p>
+					I am the founder and CEO of Sorev, 
+					an online education marketing and production company and owner operator of 
+					Cobblestone Productions, a media production company for weddings and businesses.
+					<br>
+					<br>
+					I am a freelance developer seeking positions in cloud infrastructure, 
+					backend development, database management, and web apps.
 				</p>
 			</div>
 		</div>
 
 		<div class="blocks" id="work"></a>
 			<div class="section-title">
-				<h2>Work</h2>
+				<h2>Portfolio</h2>
+				<p>write some stuff about the portfolio here</p>
 			</div>
 			<div class="content">
-				<div class="card">
-					<h3>Image 1</h3>
-					<img src="./assets/images/ELEVATE THUMBs-1.jpg" alt="beautiful photo">
+				<div class="card card-1">
+					<h3>Project 1</h3>
+					<img src="./assets/images/ELEVATE THUMBs-2.jpg" alt="beautiful photo">
 				</div>
-				<div class="card">
-					<h3>Image 1</h3>
-					<img src="./assets/images/ELEVATE THUMBs-1.jpg" alt="beautiful photo">
+				<div class="card other-card">
+					<h3>Project 2</h3>
+					<img src="./assets/images/ELEVATE THUMBs-3.jpg" alt="beautiful photo">
 				</div>
-				<div class="card">
-					<h3>Image 1</h3>
-					<img src="./assets/images/ELEVATE THUMBs-1.jpg" alt="beautiful photo">
+				<div class="card other-card">
+					<h3>Project 3</h3>
+					<img src="./assets/images/ELEVATE THUMBs-4.jpg" alt="beautiful photo">
 				</div>
-				<div class="card">
-					<h3>Image 1</h3>
-					<img src="./assets/images/ELEVATE THUMBs-1.jpg" alt="beautiful photo">
+				<div class="card other-card">
+					<h3>Project 4</h3>
+					<img src="./assets/images/ELEVATE THUMBs-5.jpg" alt="beautiful photo">
+				</div>
+				<div class="card other-card">
+					<h3>Project 5</h3>
+					<img src="./assets/images/ELEVATE THUMBs-5.jpg" alt="beautiful photo">
+				</div>
+				<div class="card other-card">
+					<h3>Project 6</h3>
+					<img src="./assets/images/ELEVATE THUMBs-5.jpg" alt="beautiful photo">
 				</div>
 			</div>
 		</div>
 
-		<form>
-
-		</form>
+		<div class="form-box">
+			<h2>Let's chat</h2>
+			<p>As me anything you are into</p>
+			<form>
+				<label for="fname">Full Name:</label><br>
+ 				<input type="text" id="fname" name="fname"><br>
+				<label for="lname">Email</label><br>
+  				<input type="text" id="email"><br>
+				<button>Send it</button>
+			</form>
+		</div>
 	</div>
 	<footer>
 		<h4>Thanks for viewing</h4>
