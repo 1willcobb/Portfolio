@@ -1,42 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/stylesheet.css" >
-    <title>Will's Portfolio</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./assets/css/reset.css" />
+	<link rel="stylesheet" href="./assets/css/stylesheet.css" />
+	<title>Will's Portfolio</title>
 </head>
 
 <main>
-    Main
+	<header class="header">
+		<h1>Will Cobb</h1>
+		<nav>
+			<a class="links" href="#about-me">About Me</a>
+			<a class="links" href="#portfolio">Portfolio</a>
+			<a class="links contact" href="mailto: cobb.will@gmail.com">Hire Me</a>
+		</nav>
+	</header>
+
+	<body>
+		<section class="hero">
+			<img src="./assets/images/Morro Film Fast needs-2.jpg">
+		</section>
+
+		<div id="about-me" class="flex-container wrapper">
+			<section class="sidebar">
+				<a><img src="./assets/images/will headshot.jpeg" alt="Photo of Will Cobb in white shirt and black hat in San Luis Obispo, CA"></a>
+			</section>
 
 
-    <header>
-        Header
-    </header>
+			<aside class="content">
+				<h2>About-Me</h2>
+				<p>
+						This is a big paragraph about me
+				</p>
+			</aside>
+		</div>
+
+		<div id="portfolio" class="flex-container wrapper">
+			<aside class="sidebar">
+				<h2>Portfolio</h2>
+			</aside>
+
+			<section class="content">
+				projects here
+			</section>
 
 
-    <section>
-        Hero
-    </section>
+			
+		</div>
 
+		
+	</body>
 
-    <section>
-        Content
-    </section>
-
-
-    <aside>
-        Sidebar
-    </aside>
-    
-
-    <footer>
-        Footer
-    </footer>
-
+	<footer class="footer" >
+		<h4>Thanks For Viewing</h4>
+	</footer>
 </main>
