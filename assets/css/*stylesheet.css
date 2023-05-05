@@ -19,6 +19,7 @@
   --hover-color:  rgb(255, 204, 146);
   --active-color:  rgb(249, 219, 185);
   --text-pop-subtle: 5px 5px 10px rgba(0, 0, 0, 0.09);
+  --text-pop-not-subtle: 5px 5px 15px rgba(0, 0, 0, 0.281);
 }
 
 html{
@@ -235,17 +236,17 @@ div {
 }
 
 #work .content{
+  justify-content: left;
+  text-align: top;
   margin: 2rem;
 }
 
 .section-title {
   display: flex;
   flex-direction: column;
-  justify-content: left;
   padding-left: 3rem;
   padding-top: 3rem;
 }
-
 
 .content {
   display: flex;
@@ -270,12 +271,14 @@ div {
   border-right: var(--borders);
 }
 
+
 .card {
   display: flex;
   flex-direction: column-reverse;
   border: var(--borders);
   box-shadow: var(--text-pop-subtle);
   text-shadow: var(--text-pop-subtle);
+  transition: .4s;
 }
 
 .card-1 {
@@ -297,6 +300,12 @@ div {
   text-align: center;
 }
 
+.card:hover {
+  transition: .5s;
+  transform: translate(-.2rem, -.2rem);
+  box-shadow: var(--text-pop-not-subtle);
+}
+
 .form-box {
   display: flex;
   flex-direction: column;
@@ -307,6 +316,7 @@ div {
 }
 
 .form-box > * {
+  text-align: center;
   color: var(--background-color);
   text-shadow: var(--text-pop-subtle);
   background-color: var(--solid-color);
@@ -323,8 +333,10 @@ div {
 }
 
 .form-box button {
+  align-items: center;
   margin-top: .2rem;
   padding: .2rem;
+
 }
 
 
