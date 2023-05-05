@@ -194,6 +194,7 @@ div {
   left: 0;
   z-index: 1;
   border-right: var(--borders);
+
 }
 
 .side-nav-headers {
@@ -211,12 +212,15 @@ div {
   flex-direction: column;
   align-self: center;
   padding: 10px 10px;
+
 }
 
 .social-icons img {
   height: 40px;
   width: 40px;
   cursor: pointer;
+  background-color: transparent;
+  filter: drop-shadow(var(--text-pop-subtle));
 }
 
 .main-body {
@@ -233,6 +237,11 @@ div {
   flex-wrap: wrap;
   gap: 1rem;
   border-bottom: var(--borders);
+}
+
+.work {
+  align-items: revert;
+  text-shadow: var(--text-pop-subtle);
 }
 
 #work .content{
@@ -295,9 +304,14 @@ div {
   border-bottom: var(--borders);
 }
 
+
 .card h3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: .5rem;
   text-align: center;
+  margin-bottom: .25rem;
 }
 
 .card:hover {
@@ -313,6 +327,7 @@ div {
   align-items: center;
   height: 20rem;
   background-color: var(--solid-color);
+  
 }
 
 .form-box > * {
@@ -320,6 +335,7 @@ div {
   color: var(--background-color);
   text-shadow: var(--text-pop-subtle);
   background-color: var(--solid-color);
+
 }
 
 .form-box label {
@@ -330,13 +346,22 @@ div {
 
 .form-box h2, p {
   padding-bottom: 1rem;
+  
 }
 
 .form-box button {
   align-items: center;
-  margin-top: .2rem;
+  margin-top: .5rem;
   padding: .2rem;
+  border: none;
+  border-style: none;
+  border: 1px solid var(--borders);
+  border-style: solid;
+}
 
+.form-box input {
+  border: 1px solid var(--borders);
+  border-style: solid;
 }
 
 
@@ -378,7 +403,7 @@ div {
 
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 768px) {
   .banner .text-box h1 {
     font-size: 2.5rem;
   }
@@ -386,9 +411,20 @@ div {
   .header-container {
     padding-left: 1rem;
   }
-}
+
+  .main-body #about-me {
+    display: flex;
+    flex-direction: column;
+    margin-top:2rem;
+  }
+
+  #headshot {
+    border: var(--borders);
+  }
 
   .banner .text-box p {
     font-size: 1.25rem;
   }
+
+
 }
