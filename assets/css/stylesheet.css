@@ -220,7 +220,6 @@ div {
   width: 40px;
   cursor: pointer;
   background-color: transparent;
-  filter: drop-shadow(var(--text-pop-subtle));
 }
 
 .main-body {
