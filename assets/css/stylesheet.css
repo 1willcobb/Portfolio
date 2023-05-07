@@ -75,14 +75,31 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   height: var(--top-nav-size);
   width: 100%;
   border-top: var(--borders);
 }
 
+
+
 footer h4 {
   font-weight: 400;
   font-size: 15px;
+}
+
+.social-icons-footer{
+  display: flex;
+  align-items: center;
+  justify-content: cener;
+  padding-top: .5rem;
+}
+
+.social-icons-footer img {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  background-color: transparent;
 }
 
 div {
