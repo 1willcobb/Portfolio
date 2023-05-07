@@ -166,7 +166,7 @@ div {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  padding: 5px 15px;
+  padding: .5rem 2rem;
   cursor: pointer;
   height: 100%;
   border-left: var(--borders);
@@ -205,7 +205,7 @@ div {
   list-style: none;
 }
 
-.social-icons {
+.social-icons-nav {
   display: flex;
   flex: 1 0 0;
   justify-content: flex-end;
@@ -215,7 +215,7 @@ div {
 
 }
 
-.social-icons img {
+.social-icons-nav img {
   height: 40px;
   width: 40px;
   cursor: pointer;
@@ -374,9 +374,11 @@ div {
     --side-bar-size: 0px;
   }
 
-  .side-nav {
+  .social-icons-nav {
     display: none;
   }
+
+
   .main-body {
     flex-direction: column;
   }
@@ -408,6 +410,11 @@ div {
     font-size: 2.5rem;
   }
 
+
+  .nav-btn {
+    padding: .1rem .5rem;
+  }
+
   .header-container {
     padding-left: 1rem;
   }
@@ -427,4 +434,10 @@ div {
   }
 
 
+}
+
+@media screen and (max-width: 450px) {
+  .nav {
+    display: none;
+  }
 }
