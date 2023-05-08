@@ -211,12 +211,35 @@ div {
   left: 0;
   z-index: 1;
   border-right: var(--borders);
-
 }
 
 .side-nav-headers {
   padding: 10px 10px;
 }
+
+.side-nav-selector {
+  display: flex;
+  flex: 1 0 0;
+  align-self: center;
+  padding: 10px 10px;
+}
+
+.side-nav-selector img {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  background-color: transparent;
+  filter: drop-shadow(var(--text-pop-not-subtle));
+  transition: .3s;
+}
+
+.side-nav-selector img:hover  {
+  transition: .3s;
+  transform: scale(1.2, 1.01);
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.418))
+}
+
+
 
 .side-nav-headers ul li {
   list-style: none;
