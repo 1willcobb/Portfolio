@@ -29,8 +29,14 @@ https://www.virginiaorosa.com/
 
 ## Links to repository:
 
-
+https://github.com/1willcobb/Portfolio
 
 ## Links to live page: 
 
+ https://1willcobb.github.io/Portfolio/
 
+ ## Demo Photos
+
+ [Top of the page](./assets/images/Screenshot%202023-05-05%20at%201.50.22%20PM.png)
+
+ [Bottom clicable icons](./assets/images/Screenshot%202023-05-07%20at%203.09.52%20PM.png)
