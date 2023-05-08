@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/stylesheet.css" >
+	
     <title>Will's Portfolio</title>
 </head>
 <body>
@@ -33,11 +34,16 @@
 	  </div>
 	
 	<section class="side-nav">
-		<div class="side-nav-headers">
-		</div>	
-		<div class="side-nav-selector">
-			<label for="box"><img src="./assets/icons/brown-icon-ham.png" alt="Ham menu"></label>
+		<div id="menu-button" class="side-nav-selector">
+			<img src="./assets/icons/brown-icon-ham.png" alt="Ham menu">
 		</div>
+		<div id="menu" class="side-nav-headers hidden">
+			<ul>
+				<li><a href="#about-me-anchor">About Me</a></li>
+				<li><a href="#work">Portfolio</a></li>
+				<li><a href="#contact-form">Contact</a></li>
+			  </ul>
+		</div>	
 		<div class="social-icons-nav">
 			<a href="https://www.instagram.com/1willcobb">
 				<img src="./assets/icons/brown-icon-IG.png" alt="Instagram Button for Will Cobb"></a>
@@ -109,7 +115,7 @@
 			</div>
 		</div>
 
-		<div class="form-box">
+		<div class="form-box" id="contact-form">
 			<h2>Let's chat</h2>
 			<p>As me anything you are into</p>
 			<form action="mailto:cobb.will@gmail.com">
@@ -134,5 +140,6 @@
 				<img src="./assets/icons/brown-icon-yt.png"  alt="Youtube button for Will Cobb"></a>
 		</div>
 	</footer>
+	<script src="./script.js"></script>
 </body>
 </html>
