@@ -172,6 +172,10 @@ div {
   background-color: transparent;
 }
 
+.banner .video-container img {
+  display: none;
+}
+
 .nav {
   text-decoration: none;
   padding: 5px 15px;
@@ -469,4 +473,16 @@ div {
   .nav {
     display: none;
   }
+
+  .banner .video-container img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: black;
+  }
+
+  .banner .video-container iframe {
+    display: none;
 }
