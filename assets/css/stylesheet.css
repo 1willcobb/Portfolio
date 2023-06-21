@@ -20,6 +20,7 @@
   --active-color:  rgb(249, 219, 185);
   --text-pop-subtle: 5px 5px 10px rgba(0, 0, 0, 0.09);
   --text-pop-not-subtle: 5px 5px 15px rgba(0, 0, 0, 0.281);
+  
 }
 
 html{
@@ -36,14 +37,15 @@ body {
   flex-direction: column;
   margin-left: var(--side-bar-size);
   margin-top: var(--top-nav-size);
+  transition: margin .5s ease;
 }
 
 header {
   width: calc(100% - var(--side-bar-size));
   position: fixed;
   top: 0;
-  left: var(--side-bar-size);
   z-index: 999;
+  transition: width .5s ease;
 }
 
 .header-container {
@@ -57,6 +59,7 @@ header {
   overflow:auto;
   padding-left: 4rem;
   text-shadow: var(--text-pop-subtle);
+  transition: margin .5s ease;
 }
 
 .header-container h1 {
@@ -69,6 +72,7 @@ nav {
   justify-content: flex-end;
   padding: 10px 10px;
   text-decoration: none;
+  transition: width .5s ease;
 }
 
 footer {
@@ -221,15 +225,64 @@ div {
   left: 0;
   z-index: 1;
   border-right: var(--borders);
-
+  transition: width .5s ease;
 }
 
 .side-nav-headers {
+  display: flex;
+  flex: 1;
+  align-self: center;
+  justify-content: center;
   padding: 10px 10px;
 }
 
+.side-nav-selector {
+  display: flex;
+  flex: 1 0 0;
+  align-self: center;
+  padding: 10px 10px;
+  border: none;
+}
+
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0s linear 0.3s;
+} 
+
+.hidden.show {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease;
+}
+
+
+.side-nav-selector img {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  background-color: transparent;
+  filter: drop-shadow(var(--text-pop-not-subtle));
+  transition: .3s;
+
+}
+
+.side-nav-selector img:hover  {
+  transition: .3s;
+  transform: scale(1.2, 1.01);
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.418))
+}
+
+
 .side-nav-headers ul li {
   list-style: none;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.side-nav-headers a {
+  text-decoration: none;
 }
 
 .social-icons-nav {
@@ -403,11 +456,23 @@ div {
     padding-left: 2rem;
   }
 
-  :root {
-    --side-bar-size: 0px;
+
+  body {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin-top: var(--top-nav-size);
+  }
+  
+  header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
   }
 
-  .social-icons-nav {
+  .social-icons-nav, .side-nav {
     display: none;
   }
 

@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/stylesheet.css" >
+	
     <title>Will's Portfolio</title>
 </head>
 <body>
@@ -36,7 +37,15 @@
 	  </div>
 	
 	<section class="side-nav">
-		<div class="side-nav-headers">
+		<div id="menu-button" class="side-nav-selector">
+			<img src="./assets/icons/brown-icon-ham.png" alt="Ham menu">
+		</div>
+		<div id="menu" class="side-nav-headers hidden">
+			<ul>
+				<li><a href="#about-me-anchor">About Me</a></li>
+				<li><a href="#work">Portfolio</a></li>
+				<li><a href="#contact-form">Contact</a></li>
+			  </ul>
 		</div>	
 		<div class="social-icons-nav">
 			<a href="https://www.instagram.com/1willcobb">
@@ -79,6 +88,18 @@
 			</div>
 			<div class="content">
 				<div class="card card-1">
+					<h3>Creator App</h3>
+					<a href="https://1willcobb.github.io/Creator_App/">
+						<img src="./assets/images/Creator app project.jpg" alt="Creator App Image">
+					</a>
+				</div>
+				<div class="card other-card">
+					<h3>Weather App</h3>
+					<a href="https://1willcobb.github.io/Weather_Dashboard/">
+						<img src="./assets/images/Weather.jpg" alt="Weather app image placeholder">
+					</a>
+				</div>
+				<div class="card other-card">
 					<h3>Portfolio Website development</h3>
 					<a href="https://1willcobb.github.io/Portfolio/">
 						<img src="./assets/images/Portfolio Assets-2.jpg" alt="Will Cobbs portfolio site build">
@@ -97,10 +118,6 @@
 					</a>
 				</div>
 				<div class="card other-card">
-					<h3>Project 4</h3>
-					<img src="./assets/images/ELEVATE THUMBs-5.jpg" alt="beautiful photo">
-				</div>
-				<div class="card other-card">
 					<h3>Project 5</h3>
 					<img src="./assets/images/ELEVATE THUMBs-6.jpg" alt="beautiful photo">
 				</div>
@@ -111,7 +128,7 @@
 			</div>
 		</div>
 
-		<div class="form-box">
+		<div class="form-box" id="contact-form">
 			<h2>Let's chat</h2>
 			<p>As me anything you are into</p>
 			<form action="mailto:cobb.will@gmail.com">
@@ -136,5 +153,6 @@
 				<img src="./assets/icons/brown-icon-yt.png"  alt="Youtube button for Will Cobb"></a>
 		</div>
 	</footer>
+	<script src="./script.js"></script>
 </body>
 </html>
