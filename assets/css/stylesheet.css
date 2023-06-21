@@ -106,6 +106,12 @@ footer h4 {
   background-color: transparent;
 }
 
+.social-icons-footer img:hover {
+  transition: .2s;
+  transform: translate(-.1rem, -.1rem);
+  opacity: 75%;
+}
+
 div {
   display: flex;
 }
@@ -168,6 +174,10 @@ div {
   text-shadow: 3px 3px 2px rgb(90, 90, 90);
   font-size: 100;
   background-color: transparent;
+}
+
+.banner .video-container img {
+  display: none;
 }
 
 .nav {
@@ -291,6 +301,12 @@ div {
   cursor: pointer;
   background-color: transparent;
   filter: drop-shadow(var(--text-pop-not-subtle));
+}
+
+.social-icons-nav img:hover {
+  transition: .2s;
+  transform: translate(-.1rem, -.1rem);
+  opacity: 75%;
 }
 
 .main-body {
@@ -520,6 +536,19 @@ div {
 
 @media screen and (max-width: 450px) {
   .nav {
+    display: none;
+  }
+
+  .banner .video-container img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: black;
+  }
+
+  .banner .video-container iframe {
     display: none;
   }
 }

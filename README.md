@@ -37,6 +37,6 @@ https://github.com/1willcobb/Portfolio
 
  ## Demo Photos
 
- [Top of the page](./assets/images/Screenshot%202023-05-05%20at%201.50.22%20PM.png)
+ ![Top of the page](./assets/images/Screenshot%202023-05-05%20at%201.50.22%20PM.png)
 
- [Bottom clicable icons](./assets/images/Screenshot%202023-05-07%20at%203.09.52%20PM.png)
+ ![Bottom clicable icons](./assets/images/Screenshot%202023-05-07%20at%203.09.52%20PM.png)
