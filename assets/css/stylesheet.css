@@ -596,7 +596,6 @@ div {
   .banner .video-container {
     display: block;
     height: 100%;
-    background-color: black;
   }
 
   .banner .video-container iframe {
