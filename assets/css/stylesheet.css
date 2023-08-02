@@ -593,11 +593,8 @@ div {
     display: none;
   }
 
-  .banner .video-container img {
+  .banner .video-container {
     display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
     height: 100%;
     background-color: black;
   }
