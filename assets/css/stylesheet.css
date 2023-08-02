@@ -117,9 +117,12 @@ div {
 }
 
 
-#about-me-anchor {
-  position: absolute;
-  top: 16rem;
+.anchor {
+  content: '';
+  display: block;
+  height: var(--top-nav-size);
+  margin-top: calc(var(--top-nav-size)* -1);
+  visibility: hidden;
 }
 
 .banner {
@@ -448,6 +451,41 @@ div {
 .form-box input {
   border: 1px solid var(--borders);
   border-style: solid;
+}
+
+.resume-container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+}
+
+.resume {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.resume ul {
+  padding-left: 3rem;
+}
+
+.resume p {
+  font-weight: 400;
+}
+
+.resume li {
+  font-weight: 300;
+  margin-top: .5rem;
+}
+
+.job-title {
+  display: flex;
+  padding: 0;
+}
+
+.job-title p {
+  margin-left: auto ;
+  font-weight: 300;
 }
 
 
